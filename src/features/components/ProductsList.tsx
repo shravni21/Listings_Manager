@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useProducts } from "../../api/useProducts";
 import ProductCard from "../components/ProductCard";
 import FiltersSidebar, { type SortOption } from "../components/FiltersSidebar";
@@ -22,7 +22,7 @@ export default function ProductsList() {
 
   const debouncedSearch = useDebounce(search, 300);
 
-  const { data, isLoading, isError, error } = useProducts(
+  const { data, isLoading, isError } = useProducts(
     page,
     pageSize,
     category,

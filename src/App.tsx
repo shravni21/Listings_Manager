@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import { Suspense } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import ProductsList from './features/components/ProductsList'
 import ProductDetails from './features/components/ProductDetails'

@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface SearchBarProps {
   value: string;
   onChange: (next: string) => void;
